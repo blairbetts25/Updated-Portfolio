@@ -1,0 +1,42 @@
+/*----------- Portfolio -----------*/
+
+.portfolio-area {
+  .filter-control {
+    &>li {
+      color: theme-scheme(inherit, #444)
+    }
+  }
+  .shufflejs {
+    .portfolio-wrapper {
+      &:before {
+        background-color: rgba(#000, 0.90);
+      }
+      .item-content .content-title {
+        color: #fff;
+      }
+    }
+  }
+
+  .lightbox-wrapper {
+    background-color: theme-scheme(#0f0f0f, #fff);
+    .lightbox-close {
+      .close-btn {
+        .btn-line,
+        &:before,
+        &:after {
+          background-color: theme-scheme(#fff, rgba(#000, .6));
+        }
+      }
+    }
+
+    .lightbox-content {
+      .content-info {
+        .single-info {
+          &>span {
+            color: theme-scheme(#c3c3c3, #444);
+          }
+        }
+      }
+    }
+  }
+}

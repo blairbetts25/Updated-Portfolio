@@ -1,0 +1,23 @@
+/*----------- Contact -----------*/
+
+.contact-area {
+  .contact-form {
+    .form-title {}
+    .form-group {
+      .form-control {
+        &:focus {
+          border-bottom: 1px solid lighten($color-scheme, 10%);
+        }
+      }
+    }
+  }
+  .contact-info {
+    .list-info {
+      .info-icon {
+        i {
+          color: $color-scheme;
+        }
+      }
+    }
+  }
+}

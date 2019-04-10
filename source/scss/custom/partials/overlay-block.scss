@@ -1,0 +1,68 @@
+/*----------- Overlay block -----------*/
+
+.overlay-block {
+  background-color: rgba(#000, .97);
+  flex-wrap: wrap;
+  display: flex;
+  position: fixed;
+  .overlay-close {
+    position: fixed;
+
+    .close-btn {
+      @include open-btn();
+      @include close-btn();
+    }
+  }
+
+  .overlay-menu {
+    text-align: center;
+    padding: 50px 0;
+
+    .nav-item {
+      margin: 18px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .nav-link {
+      @include anchor-basic(#fff, #fff);
+      display: inline-block;
+      padding: 0;
+      transition: $transition-x2;
+      font-size: 44px;
+      line-height: 100%;
+      user-select: none;
+    }
+
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .overlay-block {
+
+    .overlay-menu {
+      .nav-link {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .overlay-block {
+    .overlay-menu {
+      .nav-item {
+        margin: 12px 0;
+      }
+      .nav-link {
+        font-size: 24px;
+      }
+    }
+  }
+}

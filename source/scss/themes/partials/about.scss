@@ -1,0 +1,29 @@
+/*----------- About -----------*/
+
+.about-area {
+  .about-img {
+    img {
+      background-color: transparent;
+      border-color: theme-scheme(rgba(#fff, .07), rgba(#000, .18));
+    }
+  }
+
+  .about-content {
+
+    .content-description {
+      p:last-child {
+        border-bottom: 2px solid theme-scheme(rgba(255,255,255,.04), rgba(0,0,0,.05));
+      }
+    }
+
+    .content-info {
+      .info-list {
+        .single-info {
+          &>span {
+            color: theme-scheme(#d0d0d0, #444);
+          }
+        }
+      }
+    }
+  }
+}

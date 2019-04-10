@@ -1,0 +1,194 @@
+/*----------- Globals -----------*/
+
+/* Disable outline */
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Body */
+
+body {
+  font-family: $font-1;
+  font-size: 14px;
+  line-height: 1.95;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Typography */
+
+
+i.icon {
+  line-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+.button-main {
+  @include button();
+}
+
+/* Section, title & description styles */
+
+.single-section {
+  padding: 105px 0;
+
+  .section-heading {
+    text-align: left;
+    margin-bottom: 60px;
+
+    &>.section-title {
+      font-weight: 800;
+      font-size: 40px;
+      margin-bottom: 12px;
+      letter-spacing: -0.25px;
+      line-height: 100%;
+      position: relative;
+      z-index: 9;
+      display: inline-block;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 52%;
+        position: absolute;
+        width: 85%;
+        bottom: 0;
+        z-index: -9;
+      }
+    }
+
+    &>.section-description {
+      font-size: 15px;
+    }
+    &.heading-center {
+      text-align: center;
+      &>.section-title {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.element-cover-bg {
+    .section-heading {
+
+      &>.section-title,
+      &>.section-description {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .single-section {
+    .section-heading {
+      &>.section-description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .single-section {
+    padding: 80px 0;
+    .section-heading {
+      &>.section-title {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+
+/* Overlay background */
+
+.element-cover-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.f-basis-100 {
+  flex-basis: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  outline: 0;
+}

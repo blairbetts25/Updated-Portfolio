@@ -1,0 +1,58 @@
+/*----------- Navbar -----------*/
+
+.navbar {
+  background-color: transparent;
+  padding: 8px 0;
+  margin: 6px 0;
+  transition: margin-top .3s ease-in-out, margin-bottom .3s ease-in-out;
+
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
+  }
+
+  .navbar-btn {
+    @include open-btn();
+  }
+
+  &.scrolled {
+    margin-top: 0;
+    margin-bottom: 0;
+    &:before {
+      content: '';
+      top: -6px;
+      height: 6px;
+      width: 100%;
+      position: absolute;
+      display: block;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar {
+
+    &,
+    &.scrolled {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar {
+
+    &,
+    &.scrolled {
+      padding: 4px 0;
+    }
+
+    .navbar-brand {
+      img {
+        width: 90px;
+      }
+    }
+  }
+}

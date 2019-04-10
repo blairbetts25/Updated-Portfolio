@@ -1,0 +1,129 @@
+/*----------- About -----------*/
+
+.about-area {
+  .about-img {
+    img {
+      width: 430px;
+    }
+  }
+
+  .about-content {
+    .content-title {
+      font-weight: 700;
+      margin-bottom: 11px;
+      font-size: 42px;
+    }
+
+    .content-role {
+      font-size: 20px;
+      margin-bottom: 22px;
+    }
+
+    .content-description {
+      font-size: 15px;
+
+      p:last-child {
+        padding-bottom: 33px;
+        margin-bottom: 0;
+      }
+    }
+
+    .content-info {
+      .info-list {
+        font-size: 15px;
+        margin-bottom: 0;
+        padding: 33px 0;
+        .single-info {
+          width: 49.6%;
+          margin-bottom: 10px;
+
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+          &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+          }
+
+          &>span {
+            font-weight: 600;
+            margin-right: 10px;
+          }
+
+          &>p {
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .content-download,
+    .content-work {
+      margin-right: 16px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .about-area {
+    .about-img {
+      img {
+        display: block;
+        margin: 0 auto 35px auto;
+        width: 65%;
+      }
+    }
+
+    .about-content {
+      .content-block {
+        padding-left: 0;
+      }
+
+      .content-title {
+        font-size: 28px;
+      }
+      .content-role {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .about-area {
+    .about-content {
+      .content-description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .about-area {
+    .about-content {
+    .content-title {
+      font-size: 26px;
+    }
+      .content-info {
+        .info-list {
+          padding: 33px 0 23px 0;
+
+          .single-info {
+            width: auto;
+            display: block;
+            margin-bottom: 10px;
+            &:nth-last-child(-n+2) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .content-download,
+      .content-work {
+        margin-bottom: 9px;
+      }
+    }
+  }
+}

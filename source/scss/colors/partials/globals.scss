@@ -1,0 +1,81 @@
+/*----------- Globals -----------*/
+
+::selection {
+  color: #fff;
+  background-color: $color-scheme;
+}
+
+body {
+  &.theme-dark {
+    .hf-theme, a:not(.btn) {
+      @include smart-color('&:hover, &:focus', lighten, color, $color-scheme, 3%);
+    }
+  }
+  &.theme-light {
+    .hf-theme, a:not(.btn) {
+      @include smart-color('&:hover, &:focus', darken, color, $color-scheme, 15%);
+    }
+  }
+}
+
+a:not(.btn) {
+  color: $color-scheme;
+}
+
+.color-scheme {
+  color: $color-scheme;
+}
+
+.background-scheme {
+  background-color: $color-scheme;
+}
+
+.btn {
+  &.button-scheme {
+    background-color: $color-scheme !important;
+    border: 1px solid $color-scheme !important;
+
+    &:focus {
+      box-shadow: none !important;
+      border-color: darken($color-scheme, 15%) !important;
+      background-color: darken($color-scheme, 15%) !important;
+    }
+  }
+
+  &.button-outline {
+    background-color: transparent !important;
+    border: 1px solid $color-scheme !important;
+    color: #222 !important;
+
+    &:focus {
+      box-shadow: none !important;
+      border-color: darken($color-scheme, 15%) !important;
+      background-color: rgba(#222, 0.05) !important;
+    }
+  }
+}
+
+body {
+  &.theme-dark {
+    .single-section {
+      .section-heading {
+        &>.section-title {
+          &:after {
+            @include smart-color('&', darken, background-color, $color-scheme, 4%);
+          }
+        }
+      }
+    }
+  }
+  &.theme-light {
+    .single-section {
+      .section-heading {
+        &>.section-title {
+          &:after {
+            @include smart-color('&', lighten, background-color, $color-scheme, 9%);
+          }
+        }
+      }
+    }
+  }
+}

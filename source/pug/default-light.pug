@@ -1,0 +1,28 @@
+extends init/layout
+block css-injects
+  +css-injects('light')
+block body
+  <body class="theme-light">
+    block content
+      include partials/background-lines
+      include partials/preloader
+      header
+        include partials/navbar
+        +navbar('light')
+        include partials/overlay-block
+        include partials/home
+        +home('light')
+      include partials/about
+      +about('light')
+      include partials/services
+      +services('light')
+      include partials/portfolio
+      +portfolio('light')
+      include partials/hire
+      include partials/testimonials
+      include partials/blog
+      include partials/contact
+      include partials/footer
+block scripts
+  include init/footer-content
+  </body>

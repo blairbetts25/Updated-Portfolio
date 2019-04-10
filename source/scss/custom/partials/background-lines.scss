@@ -1,0 +1,18 @@
+/*----------- Background lines -----------*/
+
+.background-lines {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  .single-line {
+    width: 2px;
+    display: inline-block;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .background-lines {
+    display: none;
+  }
+}

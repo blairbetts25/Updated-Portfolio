@@ -1,0 +1,43 @@
+/*----------- Home -----------*/
+
+.home-area {
+  &:before {
+    background-color: rgba(#000, .0);
+  }
+
+  .content-greet {
+    color: theme-scheme(#f0f0f0, #222);
+  }
+
+  .content-skills {
+    .single-skill {
+      &::after {
+        background-color: theme-scheme(#b9b9b9, #999);
+      }
+    }
+  }
+
+  .content-description {
+    color: theme-scheme(inherit, #5a5a5a);
+  }
+
+  .home-tip {
+    color: theme-scheme(#fff, #333);
+    font-weight: theme-scheme(300, 400);
+
+    &:after {
+      background-color: theme-scheme(#fff, #333);;
+    }
+  }
+
+  .home-mouse {
+    .mouse-shape {
+      border-color: #fff;
+      background-color: theme-scheme(rgba(#000, .35), rgba(#000, .5));
+
+      .mouse-wheel {
+        background-color: #fff;
+      }
+    }
+  }
+}

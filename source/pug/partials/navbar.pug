@@ -1,0 +1,9 @@
+mixin navbar(theme)
+  +nl()
+  // Navbar
+  nav#navbar.navbar.fixed-top
+    .container
+      a.navbar-brand(data-scroll='', href='#home-area')
+        img.img-fluid(src=`img/img-logo-${theme}.png`, alt='CardX')
+      a.navbar-btn(href='#overlay-block')
+        span.btn-line

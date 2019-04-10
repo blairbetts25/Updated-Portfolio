@@ -1,0 +1,11 @@
+/*----------- Overlay block -----------*/
+
+.overlay-block {
+  .overlay-menu {
+      .nav-link {
+        &:hover, &:focus, &.active {
+          color: $color-scheme;
+        }
+      }
+  }
+}

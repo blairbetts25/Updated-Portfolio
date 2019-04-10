@@ -1,0 +1,38 @@
+mixin about(theme)
+  +nl()
+  // About
+  section#about-area.single-section.about-area
+    .container
+      .row.align-items-center
+        +nl()
+        // Picture part
+        .col-12.col-lg-5.about-img
+          img.img-fluid.img-thumbnail(src='img/about-img.jpg', alt='About Picture')
+        +nl()
+        // Content part
+        .col-12.col-lg-7.about-content
+          .content-block
+            h2.content-title I’m Daniel Smith
+            h6.content-role I am a Full-Stack Web Developer
+            .content-description
+              p
+                | I am a freelancer based in the United Kingdom and i have been building noteworthy websites for years. For this time i've done all types of projects.
+              p
+                | I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster. If you're interested in working with me, don't hesitate to hire me.
+            address.content-info
+              ul.list-inline.info-list
+                li.list-inline-item.single-info
+                  span Name:
+                  p Daniel Smith
+                li.list-inline-item.single-info
+                  span Email:
+                  p
+                    a(href='mailto:daniel@example.com') daniel@example.com
+                li.list-inline-item.single-info
+                  span Age:
+                  p 21
+                li.list-inline-item.single-info
+                  span From:
+                  p Liverpool, United Kingdom
+            a.btn.content-download.button-main.button-scheme(href='#0', role='button') Download CV
+            a.btn.content-work.button-main(data-scroll='', href='#portfolio-area', role='button') My Work

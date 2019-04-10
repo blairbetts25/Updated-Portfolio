@@ -1,0 +1,65 @@
++nl()
+// Contact
+section#contact-area.single-section.contact-area
+  .container
+    .row
+      .col-12
+        .section-heading
+          h2.section-title Get in Touch
+          p.section-description Feel free to contact me anytime
+    .row
+      +nl()
+      // Contact form
+      .col-12.col-lg-7
+        form#contact-form.contact-form(method='post', action='php/contact.php')
+          h4.form-title Message Me
+          .row
+            .col-12.col-md-6.form-group
+              input#contact-name.form-control(type='text', name='name', placeholder='Name', required='')
+            .col-12.col-md-6.form-group
+              input#contact-email.form-control(type='email', name='email', placeholder='Email', required='')
+            .col-12.form-group
+              input#contact-subject.form-control(type='text', name='subject', placeholder='Subject', required='')
+            .col-12.form-group.form-message
+              textarea#contact-message.form-control(name='message', placeholder='Message', rows='5', required='')
+            .col-12.form-submit
+              button#contact-submit.btn.button-main.button-scheme(type='submit') Submit
+              p.contact-error Oops! Something went wrong. Please try again.
+      +nl()
+      // Contact info
+      .col-12.col-lg-5
+        .contact-info
+          h4.info-title Contact Info
+          p.info-description
+            | Always available for freelance work if the right project comes along, Feel free to contact me!
+          ul.list-unstyled.list-info
+            li
+              .media.align-items-center
+                span.info-icon
+                  i.icon.ion-logo-ionic
+                .media-body.info-details
+                  h6.info-type Name
+                  span.info-value Daniel Smith
+            li
+              .media.align-items-center
+                span.info-icon
+                  i.icon.ion-md-map
+                .media-body.info-details
+                  h6.info-type Location
+                  span.info-value 4155 Mann Island, Liverpool, United Kingdom.
+            li
+              .media.align-items-center
+                span.info-icon
+                  i.icon.ion-md-call
+                .media-body.info-details
+                  h6.info-type Call Me
+                  span.info-value
+                    a(href='tel:+441632967704') +44 1632 967704
+            li
+              .media.align-items-center
+                span.info-icon
+                  i.icon.ion-md-send
+                .media-body.info-details
+                  h6.info-type Email Me
+                  span.info-value
+                    a(href='mailto:daniel@example.com') daniel@example.com

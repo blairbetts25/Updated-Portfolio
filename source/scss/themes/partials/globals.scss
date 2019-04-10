@@ -1,0 +1,57 @@
+/*----------- Globals -----------*/
+
+body {
+  color: theme-scheme(#9f9f9f, #555);
+  background-color: theme-scheme(#111, #fff);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: theme-scheme(#f0f0f0, #222);
+}
+
+hr {
+  border-top: 3px solid theme-scheme(#1b1b1b, #e6e6e6);
+}
+
+.anchor-basic {
+  @include anchor-basic(theme-scheme(#fff, #222), theme-scheme(darken(#fff, 25%), darken(#222, 25%)));
+}
+
+.button-main {
+  color: #222;
+  background-color: #fff;
+  border: 1px solid theme-scheme(#fff, #d4d4d4);
+
+  &:focus {
+    box-shadow: none;
+    background-color: darken(#fff, 25%);
+    border: 1px solid theme-scheme(darken(#fff, 25%), #d4d4d4);
+  }
+}
+
+.button-main.button-scheme {
+  color: #fff;
+}
+
+.single-section {
+  background-color: theme-scheme(#0f0f0f, #fff);
+  &.alt-bg {
+    background-color: theme-scheme(#121212, #f7f7f7);
+  }
+}
+
+
+.element-cover-bg:before {
+  background-color: rgba(#000, .85);
+}

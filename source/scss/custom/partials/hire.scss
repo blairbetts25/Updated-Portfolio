@@ -1,0 +1,42 @@
+/*----------- Hire -----------*/
+
+.hire-area {
+  padding: 80px 0;
+  background-attachment: fixed;
+  .row-custom {
+    align-items: center;
+  }
+  .hire-title {
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .hire-description {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .hire-btn {
+
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .hire-area {
+    .row-custom {
+      text-align: center;
+    }
+    .hire-title {
+      font-size: 34px;
+    }
+    .hire-description {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .hire-area {
+    .hire-title {
+      margin-bottom: 18px;
+    }
+  }
+}

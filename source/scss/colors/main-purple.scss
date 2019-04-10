@@ -1,0 +1,33 @@
+$current-theme-name: "purple";
+@import "schemes/purple.scss";
+
+@import '../init';
+/*----------- Table of Contents -----------*/
+
+/**
+ * Bootstrap Template
+ * Globals
+ * Preloader
+ * Overlay block
+ * Home
+ * About
+ * Services
+ * Portfolio
+ * Testimonials
+ * Pricing
+ * Blog
+ * Contact
+ */
+
+@import 'partials/bootstrap-template';
+@import 'partials/globals';
+@import 'partials/preloader';
+@import 'partials/overlay-block';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/services';
+@import 'partials/portfolio';
+@import 'partials/testimonials';
+@import 'partials/pricing';
+@import 'partials/blog';
+@import 'partials/contact';

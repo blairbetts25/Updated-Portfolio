@@ -1,0 +1,19 @@
+/*----------- Navbar -----------*/
+
+.navbar {
+  .navbar-btn {
+    .btn-line,
+    &:before,
+    &:after {
+      background-color: theme-scheme(#fff, #333);
+    }
+  }
+
+  &.scrolled {
+    background-color: theme-scheme(#060606, #fff);
+    box-shadow: 0 0 8px 0 rgba(#060606, .15);
+    &:before {
+      background-color: theme-scheme(#060606, #fff);
+    }
+  }
+}

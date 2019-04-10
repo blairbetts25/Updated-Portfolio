@@ -1,0 +1,20 @@
+/*----------- Testimonials -----------*/
+
+.testimonials-area {
+  .single-review {
+    .review-content {
+      color: theme-scheme(#a5a5a5, inherit);
+    }
+    .review-client {
+      .client-avatar {
+        box-shadow: 0 0 7px 0 rgba(#000, .33);
+      }
+      .client-name {
+        color: theme-scheme(#efefef, #333)
+      }
+      .client-role {
+        color: theme-scheme(#888, #888);
+      }
+    }
+  }
+}

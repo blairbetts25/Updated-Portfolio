@@ -1,0 +1,13 @@
+/*----------- Preloader -----------*/
+
+.preloader {
+  .preloader-block {
+    .preloader-icon {
+      .progress-line {
+        &:before {
+          background-color: $color-scheme;
+        }
+      }
+    }
+  }
+}

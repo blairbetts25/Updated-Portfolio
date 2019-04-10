@@ -1,0 +1,15 @@
+/*----------- Home -----------*/
+
+.home-area {
+  .content-skills {
+    .single-skill {
+      b {
+        &.is-visible {
+          &:after {
+            background-color: $color-scheme;
+          }
+        }
+      }
+    }
+  }
+}

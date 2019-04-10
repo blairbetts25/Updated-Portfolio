@@ -1,0 +1,37 @@
+@import '../init';
+
+/*----------- Table of Contents -----------*/
+
+/**
+ * Globals
+ * Background lines
+ * Preloader
+ * navbar
+ * Overlay block
+ * Home
+ * About
+ * Services
+ * Portfolio
+ * Hire
+ * Testimonials
+ * Pricing
+ * Blog
+ * Contact
+ * Footer
+ */
+
+@import 'partials/globals';
+@import 'partials/background-lines';
+@import 'partials/preloader';
+@import 'partials/navbar';
+@import 'partials/overlay-block';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/services';
+@import 'partials/portfolio';
+@import 'partials/hire';
+@import 'partials/testimonials';
+@import 'partials/pricing';
+@import 'partials/blog';
+@import 'partials/contact';
+@import 'partials/footer';

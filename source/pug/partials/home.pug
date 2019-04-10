@@ -1,0 +1,30 @@
+mixin home(theme, variant)
+  - var variantClass = (variant ? `${variant}-variant` : null)
+  +nl()
+  // Home
+  section#home-area.home-area.element-cover-bg(class=variantClass,style=`background-image:url(img/home-${theme}.png)`)
+    .container.h-100
+      .row.h-100.position-relative.align-items-center
+        .col-12.col-lg-7.home-content
+          h5.content-greet
+            | Hello, my name is
+            +spc
+            b Daniel
+          h1.content-skills.cd-headline.clip
+            | I’m a
+            +spc
+            span.cd-words-wrapper.single-skill
+              b.is-visible Developer
+              b Designer
+              b Freelancer
+          p.content-description
+            | I'm a Web Developer with extensive experience for over 3 years. My expertise is to create and design Websites, Apps and more...
+          a.btn.content-work.button-main(data-scroll='', href='#portfolio-area', role='button') My Work
+          a.btn.content-hire.button-main.button-scheme(data-scroll='', href='#contact-area', role='button') Hire me
+        a(href='#about-area', data-scroll='')
+          .home-tip About me
+        .home-mouse
+          .mouse-shape
+            .mouse-wheel
+
+

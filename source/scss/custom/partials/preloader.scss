@@ -1,0 +1,64 @@
+/*----------- Preloader -----------*/
+
+.preloader {
+  background-color: #0e0e0e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+
+  .preloader-block {
+    position: fixed;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    z-index: 3000;
+
+    .preloader-brand {
+      svg {
+        width: 120px;
+        margin-bottom: 14px;
+        opacity: .9;
+        fill: #fff;
+      }
+    }
+
+    .preloader-icon {
+      .progress-line {
+        background-color: #222;
+        display: flex;
+
+        &:before {
+          background-color: #fff;
+          content: '';
+          animation: progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+
+        &,
+        &:before {
+          height: 5px;
+          width: 120px;
+          margin: 0;
+        }
+
+        @keyframes progress {
+          0% {
+            margin-left: 0px;
+            margin-right: 100%;
+          }
+
+          50% {
+            margin-left: 25%;
+            margin-right: 0%;
+          }
+
+          100% {
+            margin-left: 100%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

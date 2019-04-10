@@ -1,0 +1,32 @@
+/*----------- Blog -----------*/
+
+.blog-area {
+  .single-post {
+    background-color: transparent;
+    border: none;
+    .post-img {
+      .content-date {
+        color: #fff;
+      }
+    }
+    .post-content {
+      .content-title {
+      }
+
+      .content-description {
+      }
+      .content-tags {
+        .tags-title {
+          color: theme-scheme(#ccc, #333);
+        }
+        .tags-list {
+          .list-inline-item:not(:last-child) {
+            &:after {
+              color: theme-scheme(#fff, #333);
+            }
+          }
+        }
+      }
+    }
+  }
+}

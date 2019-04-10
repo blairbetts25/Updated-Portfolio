@@ -1,0 +1,142 @@
+/*----------- Contact -----------*/
+
+.contact-area {
+
+  address,
+  ul {
+    margin: 0;
+  }
+
+  .form-title,
+  .info-title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .contact-form {
+    .form-title {
+      margin-bottom: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+
+      .form-control {
+        padding: 9px 14px;
+        height: 41px;
+        border: none;
+        font-size: 14px;
+        border-radius: 0;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      &.form-message {
+        margin-bottom: 18px;
+
+        #contact-message {
+          height: auto;
+        }
+      }
+    }
+
+    .form-submit {
+      #contact-submit {
+        padding: 8px 20px;
+      }
+
+      .contact-error {
+        margin: 0;
+        margin-top: 8px;
+        display: none;
+      }
+    }
+  }
+
+  .contact-info {
+    padding-left: 15px;
+
+    .info-title {
+      margin-bottom: 16px;
+    }
+
+    .info-description {
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .list-info {
+      &>li {
+        &:first-child {
+          .info-icon {
+            margin-bottom: 13px;
+          }
+
+          .info-details {
+            padding-top: 0;
+          }
+        }
+
+        &:last-child {
+          .info-icon {
+            margin-top: 13px;
+          }
+
+          .info-details {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      .info-icon {
+        margin-right: 48px;
+        position: relative;
+        font-size: 34px;
+
+        i {
+          position: absolute;
+          line-height: 100%;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      .info-details {
+        padding: 14px 0 13px 20px;
+
+        .info-type {
+          font-weight: 600;
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+
+        .info-value {}
+      }
+
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .contact-area {
+    .contact-form {
+      .form-group {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .contact-area {
+    .contact-form {
+      margin-bottom: 45px;
+    }
+
+    .contact-info {
+      padding-left: 0;
+    }
+  }
+}

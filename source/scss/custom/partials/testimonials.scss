@@ -1,0 +1,61 @@
+/*----------- Testimonials -----------*/
+
+.testimonials-area {
+  padding: 90px 0;
+  .section-heading {
+    margin-bottom: 55px;
+  }
+  .single-review {
+    text-align: center;
+    .review-icon {
+      font-size: 66px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    .review-content {
+      margin-bottom: 31px;
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    .review-client {
+      flex-direction: row;
+      text-align: left;
+      margin-bottom: 30px;
+      &>.media {
+        justify-content: center;
+      }
+      .client-avatar {
+        width: 46px;
+        margin-right: 11px;
+      }
+
+      .client-details {
+        align-self: center;
+      }
+
+      .client-name {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .client-role {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .testimonials-area {
+    .single-review {
+      .review-content {
+        font-size: 14px;
+      }
+    }
+  }
+}

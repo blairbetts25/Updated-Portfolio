@@ -1,0 +1,42 @@
+/*----------- Pricing -----------*/
+
+.pricing-area {
+  .single-plan {
+    background-color: theme-scheme(#0B0B0B, #fff);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+
+    .plan-type {
+      color: theme-scheme(#f0f0f0, #444);
+    }
+
+    .plan-price {
+      color: theme-scheme(#f0f0f0, #444);
+    }
+
+    .plan-list {
+
+      li {
+        color: theme-scheme(inherit, inherit);
+      }
+    }
+
+    .plan-btn {
+    }
+
+    &.plan-popular {
+      box-shadow: 0 0 35px 0 theme-scheme(rgba(0, 0, 0, .60), rgba(0, 0, 0, 0.15));
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pricing-area {
+    .single-plan {
+
+      &.plan-popular {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+extends init/layout
+block css-injects
+  +css-injects('dark')
+block body
+  <body class="theme-dark">
+    block content
+      include partials/background-lines
+      include partials/preloader
+      header
+        include partials/navbar
+        +navbar('dark')
+        include partials/overlay-block
+        include partials/home
+        +home('dark')
+      include partials/about
+      +about('dark')
+      include partials/services
+      +services('dark')
+      include partials/portfolio
+      +portfolio('dark')
+      include partials/hire
+      include partials/testimonials
+      include partials/pricing
+      hr
+      include partials/blog
+      include partials/contact
+      include partials/footer
+block scripts
+  include init/footer-content
+  </body>

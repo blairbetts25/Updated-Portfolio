@@ -1,0 +1,83 @@
+/*----------- Pricing -----------*/
+
+.pricing-area {
+  .single-plan {
+    text-align: center;
+    padding: 30px 0;
+
+    .plan-icon {
+      display: inline-block;
+      font-size: 54px;
+      margin-bottom: 27px;
+    }
+
+    .plan-type {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .plan-price {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 22px;
+    }
+
+    .plan-list {
+      margin-bottom: 18px;
+
+      li {
+        padding: 8px;
+      }
+    }
+
+    .plan-btn {
+    }
+
+    &.plan-popular {
+      position: relative;
+      z-index: 9;
+      padding: 45px 0;
+      margin: 0 -30px;
+
+      .plan-icon {
+        margin-bottom: 30px;
+      }
+
+      .plan-price {
+        margin-bottom: 27px;
+      }
+
+      .plan-list {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pricing-area {
+    .single-plan {
+      padding: 50px 0;
+
+      &.plan-popular {
+        z-index: auto;
+        padding: 50px 0;
+        margin: 0;
+
+        .plan-icon {
+          margin-bottom: 27px;
+        }
+
+        .plan-price {
+          margin-bottom: 22px;
+        }
+
+        .plan-list {
+          margin-bottom: 18px;
+        }
+
+      }
+    }
+  }
+}

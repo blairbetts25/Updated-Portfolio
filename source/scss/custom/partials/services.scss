@@ -1,0 +1,37 @@
+/*----------- Services -----------*/
+
+.services-area {
+  .single-service {
+    text-align: left;
+    padding: 27px 24px;
+    margin-bottom: 37px;
+    transition: $transition;
+
+    .service-icon {
+      font-size: 50px;
+      margin-right: 22px;
+      display: inline-block;
+    }
+
+    .service-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .service-description {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .services-area {
+    .single-service {
+      .service-description {
+        font-size: 13px;
+      }
+    }
+  }
+}

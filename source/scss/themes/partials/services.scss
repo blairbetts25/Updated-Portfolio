@@ -1,0 +1,12 @@
+/*----------- Services -----------*/
+
+.services-area {
+  .single-service {
+    box-shadow: theme-scheme(none, 0 2px 8px 0 rgba(#000, 0.10));
+    background-color: theme-scheme(#0c0c0c, #fff);
+
+    .service-title {
+      color: theme-scheme(#dfdfdf, #444);
+    }
+  }
+}

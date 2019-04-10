@@ -1,0 +1,35 @@
+$theme: 'light';
+
+@import '../init';
+
+/*----------- Table of Contents -----------*/
+
+/**
+ * Globals
+ * Background lines
+ * navbar
+ * Home
+ * About
+ * Services
+ * Portfolio
+ * Hire
+ * Testimonials
+ * Pricing
+ * Blog
+ * Contact
+ * Footer
+ */
+
+@import 'partials/globals';
+@import 'partials/background-lines';
+@import 'partials/navbar';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/services';
+@import 'partials/portfolio';
+@import 'partials/hire';
+@import 'partials/testimonials';
+@import 'partials/pricing';
+@import 'partials/blog';
+@import 'partials/contact';
+@import 'partials/footer';
