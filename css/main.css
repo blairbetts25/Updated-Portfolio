@@ -748,6 +748,10 @@ hr {
 }
 
 /*----------- About -----------*/
+#headshot{
+  transform: rotate(90deg);
+  width: 500%;
+}
 .about-area .about-img img {
   width: 430px;
 }
